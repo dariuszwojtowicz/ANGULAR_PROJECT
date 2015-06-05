@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: 200ms all;
+    outline: none !important;
+}
+
+#inbox a {
+  text-decoration: none;
+}
+
+#inbox li {
+  padding: 10px;
+  border: 1px solid grey;
+  margin: 5px;
+}
+
+#inbox .false {
+	background-color : green;
+}
+
+#inbox .true {
+	background-color: grey;
+}
+
+#inbox .sender {
+	color: white;
+	padding-bottom: 5px;
+	display: inline-block;
+}
+
+#inbox	button {
+	float: right;;
+}
+
+#inbox .title {
+	color: white;
+	padding-bottom: 5px;
+}
+
+#inbox .content {
+	color: white;
+	max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div#inbox {
+	width: 100%;
+}
