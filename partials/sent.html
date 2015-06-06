@@ -1,0 +1,19 @@
+<search></search>
+<div id="outbox">
+    <div ng-if="outbox.length > 0">
+    <ul>
+        <li ng-repeat="mail in outbox | orderBy: '-sent'" class="true">
+            <a href="/#/view/:{{mail.id}}">
+                <div><p class="receivers">Odbiorcy: {{mail.receivers}}</p></div>
+                <p class="title">Tytuł: {{mail.title}}</p>
+                <p class="content">{{mail.content}}</p>
+            </a>
+        </li>
+    </ul>
+    </div>
+    
+    <div ng-if="outbox.length == 0">
+        <p class="empty" >Ładowanie wiadomości...</p>
+    </div>
+</div>
+
