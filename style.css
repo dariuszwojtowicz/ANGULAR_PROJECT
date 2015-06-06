@@ -5,11 +5,11 @@
     outline: none !important;
 }
 
-#inbox a {
+#inbox a, #outbox a {
   text-decoration: none;
 }
 
-#inbox li {
+#inbox li, #outbox li {
   padding: 10px;
   border: 1px solid grey;
   margin: 5px;
@@ -19,26 +19,32 @@
 	background-color : green;
 }
 
-#inbox .true {
+#inbox .true, #outbox .true {
 	background-color: grey;
 }
 
-#inbox .sender {
+#inbox .sender, #outbox .receivers {
 	color: white;
 	padding-bottom: 5px;
 	display: inline-block;
 }
 
-#inbox	button {
+#outbox .receivers {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#inbox	button, #outbox button {
 	float: right;;
 }
 
-#inbox .title {
+#inbox .title, #outbox .title {
 	color: white;
 	padding-bottom: 5px;
 }
 
-#inbox .content {
+#inbox .content, #outbox .content {
 	color: white;
 	max-width: 100%;
     overflow: hidden;
@@ -46,6 +52,6 @@
     white-space: nowrap;
 }
 
-div#inbox {
+div#inbox, div#outbox {
 	width: 100%;
 }

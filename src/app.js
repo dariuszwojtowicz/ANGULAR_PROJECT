@@ -3,12 +3,12 @@ var app = angular.module('myapp', ['ui.router']).config(function($stateProvider)
 	.state('inbox', {
 		url: "/inbox",
 		templateUrl: "partials/inbox.html",
-		controller: 'InboxCtrl'
+		controller: 'ListCtrl'
 	})
 	.state('home', {
 		url: "/",
 		templateUrl: "partials/inbox.html",
-		controller: 'InboxCtrl'
+		controller: 'ListCtrl'
 	})
 	.state('email', {
 		url: "/view/:emailId",
@@ -18,7 +18,7 @@ var app = angular.module('myapp', ['ui.router']).config(function($stateProvider)
 	.state('sent', {
 		url: "/sent",
 		templateUrl: "partials/sent.html",
-		controller: 'SentCtrl'
+		controller: 'ListCtrl'
 	})
 	.state('create', {
 		url: "/create",
