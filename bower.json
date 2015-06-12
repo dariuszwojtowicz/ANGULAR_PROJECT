@@ -1,0 +1,23 @@
+{
+  "name": "ANGULAR_PROJECT",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dariuszwojtowicz/ANGULAR_PROJECT",
+  "authors": [
+    "Dariusz Wójtowicz",
+    "Patryk Poleszczuk",
+    "Mariusz Wójcik"
+  ],
+  "main": "index.js",
+  "license": "BSD",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-ui-router": "~0.2.15"
+  }
+}
