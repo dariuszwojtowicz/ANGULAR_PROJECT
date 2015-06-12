@@ -2,7 +2,7 @@
   "name": "EmailClient",
   "version": "0.0.0",
   "description": "Angular e-mail client",
-  "main": "index.js",
+  "main": "server/server.js",
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
