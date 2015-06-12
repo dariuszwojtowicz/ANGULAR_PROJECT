@@ -159,43 +159,16 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 321,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "test_api.html",
-			"settings":
-			{
-				"buffer_size": 3136,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/server.js",
-			"settings":
-			{
-				"buffer_size": 2666,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "server/helpers.js",
-			"settings":
-			{
-				"buffer_size": 1596,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 392.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -219,7 +192,11 @@
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 0.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
 	},
 	"distraction_free":
 	{
@@ -232,6 +209,10 @@
 	},
 	"file_history":
 	[
+		"/C/Github/ANGULAR_PROJECT/server/helpers.js",
+		"/C/Github/ANGULAR_PROJECT/server/server.js",
+		"/C/Github/ANGULAR_PROJECT/test_api.html",
+		"/C/Github/ANGULAR_PROJECT/index.html",
 		"/F/NAJ/Lesson 9 - Promises and Ajax/code/http/js/app.js",
 		"/F/NAJ/naj/Lesson 6 - MVC/code/js/app.js",
 		"/F/NAJ/naj/Lesson 7 - Angular/code/js/todoctrl.js",
@@ -355,11 +336,7 @@
 		"/F/NAJ/1/First.js",
 		"/F/NAJ/First.html",
 		"/C/Users/Dariusz/Desktop/NaszDom/css/elastislide.css",
-		"/C/Users/Dariusz/Desktop/NaszDom/css/demo.css",
-		"/C/Users/Dariusz/Desktop/NaszDom/css/reset.css",
-		"/C/Users/Dariusz/Desktop/NaszDom/css/style.css",
-		"/C/Users/Dariusz/Desktop/NaszDom/my.html",
-		"/C/Users/Dariusz/Desktop/NaszDom/index.html"
+		"/C/Users/Dariusz/Desktop/NaszDom/css/demo.css"
 	],
 	"find":
 	{
@@ -461,117 +438,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 321,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								321,
-								321
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "test_api.html",
-					"settings":
-					{
-						"buffer_size": 3136,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								377,
-								377
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "server/server.js",
-					"settings":
-					{
-						"buffer_size": 2666,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								418,
-								418
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1575.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "server/helpers.js",
-					"settings":
-					{
-						"buffer_size": 1596,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								251,
-								251
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -610,6 +478,8 @@
 	{
 		"height": 54.0
 	},
+	"pinned_build_system": "",
+	"project": "workspace.sublime-project",
 	"replace":
 	{
 		"height": 62.0
@@ -618,6 +488,7 @@
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -630,15 +501,32 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
 	"side_bar_width": 197.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
