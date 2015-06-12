@@ -27,8 +27,8 @@ var app = angular.module('myapp', ['ui.router']).config(function($stateProvider)
 	})
 	.state('reply', {
 		url: "/create/:emailId",
-		templateUrl: "partials/reply.html",
-		controller: 'ReplyCtrl'
+		templateUrl: "partials/create.html",
+		controller: 'CreateCtrl'
 	})
 	.state('config', {
 		url: "/config",
