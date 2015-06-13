@@ -4,6 +4,10 @@
     transition: all 200ms easy-in;
     outline: none !important;
 }
+body{
+    background-color: #ffffff;
+}
+
 button {
   cursor: pointer;
 }
@@ -135,4 +139,49 @@ div#inbox, div#outbox {
 input#filter-mail {
     width: 100%;
     padding: 10px;
+}
+
+/*
+  Config view
+*/
+
+.color-rect {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #ffffff;
+}
+
+.color-rect.red {
+    background-color: red;
+}
+
+.color-rect.purple {
+    background-color: purple;
+}
+
+.color-rect.green {
+    background-color: green;
+}
+
+.color-rect.blue {
+    background-color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.purple {
+    color: purple;
 }
