@@ -1,5 +1,7 @@
-var app = angular.module('myapp', ['ui.router']).config(function($stateProvider) {
-	$stateProvider
+var app = angular.module('myapp', ['ui.router', 'LocalStorageModule']).config(function($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.otherwise("/");
+    $stateProvider
 	.state('inbox', {
 		url: "/inbox",
 		templateUrl: "partials/inbox.html",
