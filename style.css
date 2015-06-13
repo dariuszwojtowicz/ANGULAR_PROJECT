@@ -131,3 +131,8 @@ div#inbox, div#outbox {
 #view header, #view h4, #view article {
   margin-bottom: 15px;
 }
+
+input#find-mail {
+    width: 100%;
+    padding: 10px;
+}
