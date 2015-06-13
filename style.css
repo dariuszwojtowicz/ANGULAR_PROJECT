@@ -132,7 +132,7 @@ div#inbox, div#outbox {
   margin-bottom: 15px;
 }
 
-input#find-mail {
+input#filter-mail {
     width: 100%;
     padding: 10px;
 }

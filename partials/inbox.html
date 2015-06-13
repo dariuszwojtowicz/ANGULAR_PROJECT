@@ -2,7 +2,7 @@
 <div id="inbox">
     <div ng-if="inbox.length > 0">
     <ul>
-        <li ng-repeat="mail in inbox | orderBy: '-received'" class="{{mail.read}}">
+        <li ng-repeat="mail in inbox | filter: findmail" class="{{mail.read}}">
             <a ng-click="read()" href="/#/view/:{{mail.id}}">
                 <div><p class="sender">Nadawca: {{mail.sender}}</p><button ng-click="delete()">Usuń</button></div>
                 <p class="title">Tytuł: {{mail.title}}</p>
@@ -14,6 +14,9 @@
     
     <div ng-if="inbox.length == 0">
         <p class="empty" >Ładowanie wiadomości...</p>
+    </div>
+    <div ng-if="findmail.length == 0">
+        <p class="empty" >No results found...</p>
     </div>
 </div>
 
