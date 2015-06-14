@@ -1,12 +1,8 @@
 app.directive('search', function () {
 	return {
 		restrict: 'E',
-		scope: {
-
-		},
-		controller: function ($scope) {
-			
-		},
+		scope: {},
+		controller: 'listCtrl',
 		templateUrl: 'partials/search.html'
 	};
 });
