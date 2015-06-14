@@ -22,40 +22,71 @@ button {
 }
 
 #inbox .false {
-	background-color : green;
+	background-color : #49D0E4;
 }
 
 #inbox .true, #outbox .true {
-	background-color: grey;
+	background: rgba(0,0,0,0.1);
+}
+
+#inbox .true .sender, #inbox .true .content, #inbox .true .title  {
+  color: black;
+}
+
+p.time {
+  margin-left: 10px;
+  display: inline-block;
+  color: black;
+}
+
+#outbox p.time {
+  float: right;
 }
 
 #inbox .sender, #outbox .receivers {
-	color: white;
+	color: black;
 	padding-bottom: 5px;
 	display: inline-block;
 }
 
 #outbox .receivers {
 	overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-#inbox	button, #outbox button {
+#inbox	button {
 	float: right;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  color: rgba(255,255,255,1);
 }
+
+#inbox .true button {
+  background: #49D0E4;
+}
+
+#inbox .false button {
+  color: black;
+}
+
 
 #inbox .title, #outbox .title {
-	color: white;
+	color: black;
 	padding-bottom: 5px;
 }
 
+#outbox .content, #outbox .receivers, #outbox .title{
+  color: black !important;
+}
+
 #inbox .content, #outbox .content {
-	color: white;
+	color: black;
 	max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 div#inbox, div#outbox {
