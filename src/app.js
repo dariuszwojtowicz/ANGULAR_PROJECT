@@ -1,4 +1,4 @@
-var app = angular.module('myapp', ['ui.router', 'LocalStorageModule']).config(function($stateProvider, $urlRouterProvider) {
+var app = angular.module('myapp', ['ui.router']).config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise("/");
     $stateProvider
@@ -10,7 +10,7 @@ var app = angular.module('myapp', ['ui.router', 'LocalStorageModule']).config(fu
 	.state('home', {
 		url: "/",
 		templateUrl: "partials/inbox.html",
-		controller: 'ListCtrl'
+		controller: 'InboxCtrl'
 	})
 	.state('email', {
 		url: "/view/:emailId",

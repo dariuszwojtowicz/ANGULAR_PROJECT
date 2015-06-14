@@ -1,6 +1,5 @@
 app.controller('InboxCtrl', function ($scope, $http, $location, emailService) {
 	$scope.inbox = [];
-	$scope.interval = 30;
 
 	$scope.getEmails = function () {
 		emailService.getEmails().then(function(res) {
@@ -23,5 +22,6 @@ app.controller('InboxCtrl', function ($scope, $http, $location, emailService) {
 	}
 
 	$scope.getEmails();
-	//setInterval(function () {$scope.getEmails()}, 1000 * $scope.interval);
+
+	setInterval(function () { $scope.getEmails() }, 1000 * emailService.getRefreshInterval());
 });

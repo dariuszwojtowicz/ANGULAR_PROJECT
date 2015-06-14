@@ -8,10 +8,7 @@
     </div>
 
     <div>
-        <label>Select refresh time</label>
-        <input type="number" ng-model="interval" placeholder="">
-    </div>
-    <div>
-        <input type="submit" ng-click="save_options()" placeholder="Save">
+        <label>Set refresh time</label>
+        <input type="number" ng-model="interval" ng-change="setRefreshInterval()">
     </div>
 </div>

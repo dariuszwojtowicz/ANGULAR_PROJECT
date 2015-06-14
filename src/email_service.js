@@ -1,6 +1,6 @@
-app.service('emailService', function($http) {
-    var interval = 30;
-    var localStorage = window["localStorage"];
+app.service('emailService', function($http, $window) {
+    var localStorage = $window["localStorage"];
+    var defaultInterval = 10;
 
     return {
         getEmails: function() {
@@ -37,9 +37,11 @@ app.service('emailService', function($http) {
                 return res;
             });
         },
+
         getRefreshInterval: function() {
-            return localStorage["Interval"];
+            return localStorage["interval"] || defaultInterval;
         },
+
         getEmail: function(id) {
             return $http.get('/emails/' + id).then(function(res) {
                 return res;

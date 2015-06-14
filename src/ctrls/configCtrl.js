@@ -1,11 +1,10 @@
-app.controller('ConfigCtrl', function($scope) {
-
-    var defaultInterval = 10000;
+app.controller('ConfigCtrl', function($scope, $window, emailService) {
     var defaultColor = 'white';
-    var localStorage = window["localStorage"];
+    var localStorage = $window["localStorage"];
+    $scope.interval =  parseInt(localStorage["interval"]) || 10;
 
-    $scope.setInterval = function(interval) {
-        localStorage["Interval"] = parseInt(interval, 10);
+    $scope.setRefreshInterval = function() {
+        localStorage["interval"] = parseInt($scope.interval, 10);
     };
 
     $scope.setColor = function(color) {
@@ -13,10 +12,6 @@ app.controller('ConfigCtrl', function($scope) {
     };
 
     $scope.getColor = function() {
-        if (localStorage["color"] !== null) {
-            return localStorage["color"];
-        } else {
-            return defaultColor;
-        }
+        return localStorage["color"] || defaultColor;
     };
 });
