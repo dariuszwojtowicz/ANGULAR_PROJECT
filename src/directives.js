@@ -8,6 +8,7 @@ app.directive('search', function () {
 app.directive('menu', function () {
     return {
         restrict: 'E',
-        templateUrl: 'partials/menu.html'
+        templateUrl: 'partials/menu.html',
+        controller: 'ConfigCtrl'
     };
 });

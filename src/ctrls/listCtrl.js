@@ -32,6 +32,4 @@ app.controller('ListCtrl', function ($scope, $http) {
 
 	$scope.getSent();
 	$scope.getEmails();
-	//setInterval(function () {$scope.getEmails()}, 1000 * $scope.interval);
-	//setInterval(function () {$scope.getSent()}, 1000 * $scope.interval);
 });

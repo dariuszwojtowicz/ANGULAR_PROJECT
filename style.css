@@ -205,10 +205,33 @@ menu ul li {
     background-color: #F8F8F8;
 }
 
-menu ul li a {
-    text-transform: none;
+a {
+    text-decoration: none;
 }
 
 ul {
     list-style: none;
+}
+
+.red {
+    background-color: #e90d00;
+    color: black;
+}
+
+.green {
+    background-color: #1f8c22;
+    color: black;
+
+}
+
+.purple {
+    background-color: darkorchid;
+    color: black;
+
+}
+
+.blue {
+    background-color: #158cba;
+    color: black;
+
 }

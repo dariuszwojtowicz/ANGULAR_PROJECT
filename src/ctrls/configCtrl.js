@@ -1,34 +1,22 @@
 app.controller('ConfigCtrl', function($scope) {
 
     var defaultInterval = 10000;
-    var defaultColor = '#fff';
+    var defaultColor = 'white';
     var localStorage = window["localStorage"];
 
     $scope.setInterval = function(interval) {
         localStorage["Interval"] = parseInt(interval, 10);
-        console.log()
     };
+
     $scope.setColor = function(color) {
         localStorage["color"] = color;
-        document.body.style.backgroundColor = "" + color + "";
     };
 
-    function getColor() {
+    $scope.getColor = function() {
         if (localStorage["color"] !== null) {
-            document.body.style.backgroundColor = "" + localStorage["color"] + "";
+            return localStorage["color"];
         } else {
-            document.body.style.backgroundColor = "" + defaultColor + "";
+            return defaultColor;
         }
     };
-
-    function getInterval() {
-        if (localStorage["Interval"] !== null) {
-            return localStorage["Interval"];
-        } else {
-            return defaultInterval;
-        }
-    };
-
-    getInterval();
-    getColor();
 });
