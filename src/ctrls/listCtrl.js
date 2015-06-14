@@ -30,10 +30,6 @@ app.controller('ListCtrl', function ($scope, $http) {
 		});
 	};
 
-    $scope.filterFunction = function(element) {
-        return element.title.match(/^Ma/) ? true : false;
-    };
-
 	$scope.getSent();
 	$scope.getEmails();
 	//setInterval(function () {$scope.getEmails()}, 1000 * $scope.interval);
