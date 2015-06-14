@@ -3,8 +3,8 @@
     <div ng-if="outbox.length > 0">
     <ul>
         <li ng-repeat="mail in outbox | orderBy: '-sent'" class="true">
-            <a href="/#/view/:{{mail.id}}">
-                <div><p class="receivers">Odbiorcy: {{mail.receivers}}</p></div>
+            <a>
+                <div><p class="receivers">Odbiorcy: {{mail.receivers}} </p><p class="time">Wysłano: {{mail.sent}}</p></div>
                 <p class="title">Tytuł: {{mail.title}}</p>
                 <p class="content">{{mail.content}}</p>
             </a>
