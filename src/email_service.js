@@ -39,7 +39,7 @@ app.service('emailService', function($http, $window) {
         },
 
         getRefreshInterval: function() {
-            return localStorage["interval"] || defaultInterval;
+            return parseInt(localStorage["interval"]) || defaultInterval;
         },
 
         getEmail: function(id) {
