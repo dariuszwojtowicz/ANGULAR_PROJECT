@@ -6,6 +6,7 @@ app.controller('ConfigCtrl', function($scope) {
 
     $scope.setInterval = function(interval) {
         localStorage["Interval"] = parseInt(interval, 10);
+        console.log()
     };
     $scope.setColor = function(color) {
         localStorage["color"] = color;

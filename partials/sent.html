@@ -2,7 +2,7 @@
 <div id="outbox">
     <div ng-if="outbox.length > 0">
     <ul>
-        <li ng-repeat="mail in outbox | orderBy: '-sent'" class="true">
+        <li ng-repeat="mail in outbox | filter: findmail | orderBy: '-sent'" class="true">
             <a href="/#/view/:{{mail.id}}">
                 <div><p class="receivers">Odbiorcy: {{mail.receivers}}</p></div>
                 <p class="title">Tytuł: {{mail.title}}</p>
