@@ -5,7 +5,7 @@ app.controller('CreateCtrl', function($scope, $http, $location, emailService) {
         receivers: [],
         title: null,
         content: null
-    }
+    };
     $scope.validEmail = true;
 
     $scope.sendEmail = function() {
@@ -28,7 +28,7 @@ app.controller('CreateCtrl', function($scope, $http, $location, emailService) {
                 $scope.validEmail = true;
             }
         }
-    }
+    };
 
     if (email_id) {
         emailService.getEmail(email_id).then(function(email) {
@@ -36,7 +36,7 @@ app.controller('CreateCtrl', function($scope, $http, $location, emailService) {
                 receivers: [].concat(email.data.sender),
                 title: "RE: " + email.data.title,
                 content: "\r\n \r\n ---- Ostatnia wiadomość ---- \r\n"+email.data.content
-            }
+            };
         });
     }
 
