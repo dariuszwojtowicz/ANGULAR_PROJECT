@@ -11,6 +11,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dariusz Wójtowicz, Patryk Poleszzuk, Mariusz Wójcik",
+  "author": "Dariusz Wójtowicz, Patryk Poleszczuk, Mariusz Wójcik",
   "license": "BSD"
 }

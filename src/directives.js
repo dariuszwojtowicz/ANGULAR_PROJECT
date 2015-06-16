@@ -1,12 +1,14 @@
 app.directive('search', function () {
 	return {
 		restrict: 'E',
-		scope: {
-
-		},
-		controller: function ($scope) {
-			
-		},
 		templateUrl: 'partials/search.html'
 	};
+});
+
+app.directive('menu', function () {
+    return {
+        restrict: 'E',
+        templateUrl: 'partials/menu.html',
+        controller: 'ConfigCtrl'
+    };
 });

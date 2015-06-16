@@ -1,8 +1,10 @@
 * {
     padding: 0;
     margin: 0;
-    transition: all 200ms easy-in;
     outline: none !important;
+}
+body{
+    background-color: #ffffff;
 }
 
 button {
@@ -162,4 +164,109 @@ div#inbox, div#outbox {
 }
 #view header, #view h4, #view article {
   margin-bottom: 15px;
+}
+
+input#filter-mail {
+    width: 100%;
+    padding: 10px;
+}
+
+/*
+  Config view
+*/
+
+.color-rect {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid #ffffff;
+}
+
+.color-rect.red {
+    background-color: red;
+}
+
+.color-rect.purple {
+    background-color: purple;
+}
+
+.color-rect.green {
+    background-color: green;
+}
+
+.color-rect.blue {
+    background-color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.blue {
+    color: blue;
+}
+
+.purple {
+    color: purple;
+}
+
+/*asd*/
+
+#ui-view {
+    width: 80%;
+    float: left;
+}
+
+menu {
+    width: 20%;
+    float: left;
+}
+
+menu ul li {
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(81, 0, 114);
+    background-color: #F8F8F8;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.red {
+    background-color: #e90d00;
+    color: black;
+}
+
+.green {
+    background-color: #1f8c22;
+    color: black;
+
+}
+
+.purple {
+    background-color: darkorchid;
+    color: black;
+
+}
+
+.blue {
+    background-color: #158cba;
+    color: black;
+
+}
+
+.highlighted {
+    background-color: #ffff00;
 }
