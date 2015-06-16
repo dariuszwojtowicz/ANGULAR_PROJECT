@@ -1,5 +1,6 @@
-app.controller('InboxCtrl', function ($scope, $http, $location, emailService) {
+app.controller('InboxCtrl', function ($scope, $http, $location, $interval, emailService) {
 	$scope.inbox = [];
+	var interval;
 
 	$scope.getEmails = function () {
 		emailService.getEmails().then(function(res) {
@@ -21,16 +22,14 @@ app.controller('InboxCtrl', function ($scope, $http, $location, emailService) {
         });
 	};
 
+	$scope.$on('$destroy', function(){
+		emailService.clearIntervalAction();
+	});
+
 	$scope.getEmails();
-
-	setInterval(function () { $scope.getEmails() }, 1000 * emailService.getRefreshInterval());
+	
+	interval = $interval(function () { console.log('Pobieram mejle'); $scope.getEmails() }, 1000 * emailService.getRefreshInterval());
+	emailService.setIntervalAction(interval);
 });
 
-app.filter('highlight', function($sce) {
-    return function(text, phrase) {
-        if (phrase) text = text.replace(new RegExp('('+phrase+')', 'gi'),
-            '<span class="highlighted">$1</span>');
-
-        return $sce.trustAsHtml(text)
-    }
-});
+;
