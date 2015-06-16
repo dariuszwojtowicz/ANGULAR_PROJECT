@@ -1,8 +1,17 @@
-app.service('emailService', function($http, $window) {
+app.service('emailService', function($http, $window, $interval) {
     var localStorage = $window["localStorage"];
     var defaultInterval = 10;
+    var intervalAction;
 
     return {
+        clearIntervalAction: function() {
+            $interval.cancel(intervalAction);
+        },
+
+        setIntervalAction: function(action) {
+            intervalAction = action;
+        },
+
         getEmails: function() {
             return $http.get('/emails').then(function(res) {
                 return res;
