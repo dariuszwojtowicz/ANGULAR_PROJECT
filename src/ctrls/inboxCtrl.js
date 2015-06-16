@@ -28,8 +28,6 @@ app.controller('InboxCtrl', function ($scope, $http, $location, $interval, email
 
 	$scope.getEmails();
 	
-	interval = $interval(function () { console.log('Pobieram mejle'); $scope.getEmails() }, 1000 * emailService.getRefreshInterval());
+	interval = $interval(function () { $scope.getEmails() }, 1000 * emailService.getRefreshInterval());
 	emailService.setIntervalAction(interval);
 });
-
-;
