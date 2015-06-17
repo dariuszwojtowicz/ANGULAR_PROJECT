@@ -12,5 +12,9 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
 
+    /* jshint task */
     grunt.registerTask('test', ['jshint:files']);
+
+    /* Default */
+    grunt.registerTask('default', ['test']);
 };

@@ -8,16 +8,16 @@ app.controller('InboxCtrl', function ($scope, $http, $location, $interval, email
         });
 	};
 
-	$scope.delete = function () {
+	$scope.delete = function ($index) {
 		event.target.disabled = 'disabled';
 		var id = this.mail.id;
 		emailService.deleteEmail(id).then(function(res) {
-            $location.path("/inbox");
+            $scope.getEmails();
         });
 	};
 
 	$scope.read = function () {
-		if (event.target.id == 'delete') {
+		if (event.target.id === 'delete') {
 			return;
 		}
 		var id = this.mail.id;
