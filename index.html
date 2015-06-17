@@ -1,29 +1,28 @@
 <!doctype html>
 <html lang="en" ng-app="myapp">
 
-    <head>
-        <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
+    <title>Email Client</title>
+    <meta name="author" content="Dariusz Wójtowicz, Mariusz Wójcik, Patryk Poleszczuk">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <title>Email Client</title>
-
-        <meta name="author" content="Damian Sosnowski">
-
-        <link rel="stylesheet" href="style.css">
-        <script src="bower_components/angular/angular.min.js"></script>
-        <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-        <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
-        <script src="src/app.js"></script>
-        <script src="src/email_service.js"></script>
-        <script src="src/directives.js"></script>
-        <script src="src/ctrls/inboxCtrl.js"></script>
-        <script src="src/ctrls/sentCtrl.js"></script>
-        <script src="src/ctrls/configCtrl.js"></script>
-        <script src="src/ctrls/createCtrl.js"></script>
-        <script src="src/ctrls/emailCtrl.js"></script>
-    </head>
-
-    <body>
+<body>
     <menu></menu>
     <div id="ui-view" ui-view></div>
-    </body>
+
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/email_service.js"></script>
+    <script src="src/directives.js"></script>
+    <script src="src/ctrls/inboxCtrl.js"></script>
+    <script src="src/ctrls/sentCtrl.js"></script>
+    <script src="src/ctrls/configCtrl.js"></script>
+    <script src="src/ctrls/createCtrl.js"></script>
+    <script src="src/ctrls/emailCtrl.js"></script>
+</body>
+
 </html>

@@ -24,7 +24,7 @@
 
 
     // ECMAScript 5.
-    "es5"           : true,   // Allow ECMAScript 5 syntax.
+    "es5"           : false,   // Allow ECMAScript 5 syntax.
     "strict"        : false,  // Require `use strict` pragma  in every file.
     "globalstrict"  : true,  // Allow global "use strict" (also enables 'strict').
 
@@ -62,5 +62,12 @@
     "sub"           : false,  // Tolerate all forms of subscript notation besides dot notation e.g. `dict['key']` instead of `dict.key`.
     "trailing"      : true,   // Prohibit trailing whitespaces.
     "white"         : false,  // Check against strict whitespace and indentation rules.
-    "indent"        : 4      // Specify indentation spacing
+    "indent"        : 4,      // Specify indentation spacing
+
+    //angular support
+    "predef": ["angular"],
+    "globals": {
+        "app": true
+    }
+    
 }

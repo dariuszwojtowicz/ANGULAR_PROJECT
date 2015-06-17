@@ -9,7 +9,11 @@
     "grunt-contrib-jshint": "^0.11.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "npm install -g bower grunt-cli",
+    "postinstall": "bower install --allow-root",
+    "test": "grunt test",
+    "prestart": "grunt",
+    "start": "node ."
   },
   "author": "Dariusz Wójtowicz, Patryk Poleszczuk, Mariusz Wójcik",
   "license": "BSD"

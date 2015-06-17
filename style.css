@@ -19,6 +19,7 @@ button {
   padding: 10px;
   border: 1px solid grey;
   margin: 5px;
+  cursor: pointer;
 }
 
 #inbox .false {
@@ -27,6 +28,10 @@ button {
 
 #inbox .true, #outbox .true {
 	background: rgba(0,0,0,0.1);
+}
+
+#inbox button:hover {
+  opacity: 1;
 }
 
 #inbox .true .sender, #inbox .true .content, #inbox .true .title  {
@@ -61,6 +66,8 @@ p.time {
   padding: 10px;
   border: none;
   color: rgba(255,255,255,1);
+  opacity: 0.7;
+  margin-left: 5px;
 }
 
 #inbox .true button {
