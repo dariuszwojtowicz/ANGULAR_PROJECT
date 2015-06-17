@@ -8,7 +8,7 @@ app.controller('InboxCtrl', function ($scope, $http, $location, $interval, email
         });
 	};
 
-	$scope.delete = function ($index) {
+	$scope.delete = function () {
 		event.target.disabled = 'disabled';
 		var id = this.mail.id;
 		emailService.deleteEmail(id).then(function(res) {
@@ -17,7 +17,7 @@ app.controller('InboxCtrl', function ($scope, $http, $location, $interval, email
 	};
 
 	$scope.read = function () {
-		if (event.target.id === 'delete') {
+		if (event.target.type === 'submit') {
 			return;
 		}
 		var id = this.mail.id;
@@ -26,6 +26,10 @@ app.controller('InboxCtrl', function ($scope, $http, $location, $interval, email
 			emailService.setAsRead(id);
 		}
 	};
+
+	$scope.respond = function(){
+    	$location.path( "/create/:" + this.mail.id);
+    };
 
 	$scope.$on('$destroy', function(){
 		emailService.clearIntervalAction();
